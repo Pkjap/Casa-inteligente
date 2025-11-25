@@ -28,7 +28,7 @@
                         </label>
                     </div>
                     <h3 class="dispositivo-title">Lâmpada da Sala</h3>
-                    <h3 class="dispositivo-status">Desligada</h3>
+                    <h3 class="dispositivo-status" id="lamp-sala-texto">Desligada</h3>
                 </div>
                 <!-- CORTINA -->
                 <div class="dispositivo-card" data-type="cortina">
@@ -40,7 +40,7 @@
                         </label>
                     </div>
                     <h3 class="dispositivo-title">Cortina</h3>
-                    <h3 class="dispositivo-status">Fechada</h3>
+                    <h3 class="dispositivo-status" id="cort-sala-texto">Fechada</h3>
                 </div>
                 <!-- PORTA -->
                 <div class="dispositivo-card" data-type="porta">
@@ -52,7 +52,7 @@
                         </label>
                     </div>
                     <h3 class="dispositivo-title">Porta</h3>
-                    <h3 class="dispositivo-status">Fechada</h3>
+                    <h3 class="dispositivo-status" id="port-sala-texto">Fechada</h3>
                 </div>
             </div>
         </section>
@@ -71,7 +71,7 @@
                         </label>
                     </div>
                     <h3 class="dispositivo-title">Lâmpada Cozinha</h3>
-                    <h3 class="dispositivo-status">Desigada</h3>
+                    <h3 class="dispositivo-status" id="lamp-cozinha-texto">Desigada</h3>
                 </div>
                 <div class="dispositivo-card" data-type="exaustor">
                     <div>
@@ -82,7 +82,7 @@
                         </label>
                     </div>
                     <h3 class="dispositivo-title">Exaustor</h3>
-                    <h3 class="dispositivo-status">Desligado</h3>
+                    <h3 class="dispositivo-status" id="exaus-cozinha-texto">Desligado</h3>
                 </div>
             </div>
         </section>
@@ -101,7 +101,7 @@
                         </label>
                     </div>
                     <h3 class="dispositivo-title">Varal</h3>
-                    <h3 class="dispositivo-status">Retraido</h3>
+                    <h3 class="dispositivo-status" id="var-varanda-texto">Retraido</h3>
                 </div>
                 <!-- IRRIGAÇÃO -->
                 <div class="dispositivo-card" data-type="Irrigação">
@@ -113,7 +113,7 @@
                         </label>
                     </div>
                     <h3 class="dispositivo-title">Irrigação</h3>
-                    <h3 class="dispositivo-status">Desligada</h3>
+                    <h3 class="dispositivo-status" id="ir-varanda-texto">Desligada</h3>
                 </div>
                 <!-- LÂMPADA DA GARAGEM -->
                 <div class="dispositivo-card" data-type="lampada">
@@ -125,7 +125,7 @@
                         </label>
                     </div>
                     <h3 class="dispositivo-title">Lâmpada da Garagem</h3>
-                    <h3 class="dispositivo-status">Desligada</h3>
+                    <h3 class="dispositivo-status" id="lamp-varanda-texto">Desligada</h3>
                 </div>
                 <!-- PORTÃO -->
                 <div class="dispositivo-card" data-type="portao">
@@ -137,11 +137,14 @@
                         </label>
                     </div>
                     <h3 class="dispositivo-title">Portão</h3>
-                    <h3 class="dispositivo-status">Fechado</h3>
+                    <h3 class="dispositivo-status" id=port-varanda-texto>Fechado</h3>
                 </div>
             </div>    
         </section>
 
     </main>
+    <!-- Importanto a biblioteca do MQTT -->
+<script src="https://unpkg.com/mqtt/dist/mqtt.min.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
