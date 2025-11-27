@@ -129,6 +129,17 @@ main {
 
 /* =============== CONTROLES ================== */
 
+button {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    background-color: #ff2525;
+    color: #fff;
+   
+}
+
+
+
 .slider{
     position: absolute;
     background-color: rgba(255, 255, 255, 0.3);
